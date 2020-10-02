@@ -47,5 +47,16 @@ public class FizzBuzzShould {
         assertThat(result3).isEqualTo("8");
     }
 
+    @Test
+    public void return_Buzz_when_next_number_to_print_is_divisible_by_5(){
+        String result = new FizzBuzz().evaluateNumber(5);
+        String result2 = new FizzBuzz().evaluateNumber(10);
+        String result3 = new FizzBuzz().evaluateNumber(20);
+
+        assertThat(result).isEqualTo("Buzz");
+        assertThat(result2).isEqualTo("Buzz");
+        assertThat(result3).isEqualTo("Buzz");
+    }
+
 
 }
