@@ -2,7 +2,9 @@ package FizzBuzz;
 
 public class FizzBuzz {
 
-    public String printNumber(){
-        return "1";
+    public String evaluateNumber(Integer number){
+        if(number == 1) return "1";
+        if(number == 2) return "2";
+        return "";
     }
 }
