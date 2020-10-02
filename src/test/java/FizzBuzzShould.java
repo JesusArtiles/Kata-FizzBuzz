@@ -36,6 +36,16 @@ public class FizzBuzzShould {
         assertThat(result3).isEqualTo("Fizz");
     }
 
+    @Test
+    public void return_normal_number_when_number_is_not_divisible_by_three(){
+        String result = new FizzBuzz().evaluateNumber(4);
+        String result2 = new FizzBuzz().evaluateNumber(7);
+        String result3 = new FizzBuzz().evaluateNumber(8);
+
+        assertThat(result).isEqualTo("4");
+        assertThat(result2).isEqualTo("7");
+        assertThat(result3).isEqualTo("8");
+    }
 
 
 }
