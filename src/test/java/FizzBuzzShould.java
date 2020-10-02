@@ -25,4 +25,17 @@ public class FizzBuzzShould {
         assertThat(result).isEqualTo("Fizz");
     }
 
+    @Test
+    public void return_Fizz_when_next_number_to_print_is_divisible_by_3(){
+        String result = new FizzBuzz().evaluateNumber(3);
+        String result2 = new FizzBuzz().evaluateNumber(6);
+        String result3 = new FizzBuzz().evaluateNumber(9);
+
+        assertThat(result).isEqualTo("Fizz");
+        assertThat(result2).isEqualTo("Fizz");
+        assertThat(result3).isEqualTo("Fizz");
+    }
+
+
+
 }
