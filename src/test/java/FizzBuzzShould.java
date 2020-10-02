@@ -17,6 +17,12 @@ public class FizzBuzzShould {
 
         assertThat(result).isEqualTo("2");
     }
-    
+
+    @Test
+    public void return_Fizz_when_next_number_to_print_is_3(){
+        String result = new FizzBuzz().evaluateNumber(3);
+
+        assertThat(result).isEqualTo("Fizz");
+    }
 
 }
